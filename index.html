@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Minha Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link para o Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para a fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link para o Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div class="stars"></div> <!-- Contêiner para as estrelas -->
+    <div class="container mt-5">
+        <h1 class="text-center">Minha Calculadora ✰</h1>
+        <div class="form-group">
+            <label for="n1">Primeiro número</label>
+            <input id="n1" type="number" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="n2">Segundo número</label>
+            <input id="n2" type="number" class="form-control" />
+        </div>
+        <div class="text-center">
+            <button id="btnSomar" class="btn btn-roxo m-2 animate__animated animate__bounce">Somar</button>
+            <button id="btnSubtrair" class="btn btn-roxo m-2 animate__animated animate__bounce">Subtrair</button>
+            <button id="btnMultiplicar" class="btn btn-roxo m-2 animate__animated animate__bounce">Multiplicar</button>
+            <button id="btnDividir" class="btn btn-roxo m-2 animate__animated animate__bounce">Dividir</button>
+        </div>
+        <h3 class="text-center mt-4">O resultado é <span id="resultado"></span></h3>
+    </div>
+
+    <!-- Scripts do jQuery e GSAP -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="javascript/script.js"></script> <!-- Link para o JS local -->
+</body>
+</html>

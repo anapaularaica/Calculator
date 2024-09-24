@@ -1,0 +1,63 @@
+body {
+    background-color: #f0e6ff; /* Cor de fundo em tom de roxo claro */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white; /* Fundo branco para a calculadora */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #6a0dad; /* Título em roxo */
+}
+
+.btn-roxo {
+    background-color: #6a0dad; /* Fundo roxo para os botões */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-roxo:hover {
+    background-color: #9b59b6; /* Cor mais clara no hover */
+}
+
+h3 {
+    color: #333; /* Cor do texto do resultado */
+}
+
+/* Adicionando estrelas como fundo */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Para que as estrelas fiquem atrás da calculadora */
+}
+
+.star {
+    position: absolute;
+    background-color: white; /* Cor das estrelas */
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 1.5s infinite alternate; /* Animação de brilho */
+}
+
+/* Animação de brilho das estrelas */
+@keyframes twinkle {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
