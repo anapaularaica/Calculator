@@ -1,14 +1,14 @@
 // Função para criar estrelas
 function criarEstrelas() {
     const starsContainer = document.querySelector('.stars');
-    for (let i = 0; i < 100; i++) { // Número de estrelas
+    for (let i = 0; i < 100; i++) { 
         const star = document.createElement('div');
         star.classList.add('star');
-        const size = Math.random() * 3 + 1; // Tamanho aleatório
+        const size = Math.random() * 3 + 1; 
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
-        star.style.top = `${Math.random() * 100}vh`; // Posição vertical aleatória
-        star.style.left = `${Math.random() * 100}vw`; // Posição horizontal aleatória
+        star.style.top = `${Math.random() * 100}vh`; 
+        star.style.left = `${Math.random() * 100}vw`; 
         starsContainer.appendChild(star);
     }
 }
@@ -41,7 +41,7 @@ function calcular(op) {
             break;
     }
 
-    $('#resultado').text(resultado); // Usando jQuery para mostrar o resultado
+    $('#resultado').text(resultado); 
     gsap.fromTo('#resultado', {scale: 0}, {scale: 1, duration: 0.5}); // Animação do resultado
 }
 
